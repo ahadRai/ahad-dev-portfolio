@@ -15,7 +15,7 @@ const skillGroups = [
         items: ['Docker', 'Git', 'RabbitMQ', 'PostgreSQL', 'MySQL', 'MSSQL', 'Redis', 'Postman'],
     },
     {
-        title: 'Concepts',
+        title: 'Others',
         items: [
             'System Design',
             'Microservices',
