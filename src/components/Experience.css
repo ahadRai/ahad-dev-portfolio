@@ -1,0 +1,91 @@
+.exp__timeline {
+    position: relative;
+}
+
+.exp__card {
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.exp__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.exp__icon-wrap {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-dim);
+    border-radius: 10px;
+    color: var(--accent);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.exp__title {
+    color: var(--text-bright);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.exp__company {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.exp__period {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.exp__bullets {
+    list-style: none;
+    padding-left: 60px;
+}
+
+.exp__bullets li {
+    position: relative;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.exp__bullets li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .exp__card {
+        padding: 24px;
+    }
+
+    .exp__header {
+        flex-direction: column;
+    }
+
+    .exp__period {
+        margin-left: 0;
+    }
+
+    .exp__bullets {
+        padding-left: 20px;
+    }
+}

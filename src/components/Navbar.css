@@ -1,0 +1,124 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 16px 40px;
+    transition: all 0.35s ease;
+}
+
+.navbar--scrolled {
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(100, 255, 218, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    padding: 10px 40px;
+}
+
+.navbar__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar__logo {
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.navbar__logo-bracket {
+    color: var(--accent);
+}
+
+/* Links */
+.navbar__links {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+.navbar__link {
+    display: inline-block;
+    padding: 8px 14px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar__link:hover,
+.navbar__link.active {
+    color: var(--accent);
+    background: rgba(100, 255, 218, 0.06);
+}
+
+.navbar__link-num {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 0.75rem;
+    margin-right: 4px;
+}
+
+/* Toggle */
+.navbar__toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--glass-border);
+    color: var(--accent);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/* Mobile */
+.navbar__mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+.navbar__mobile-link {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar__mobile-link:hover {
+    color: var(--accent);
+    background: rgba(100, 255, 218, 0.06);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
