@@ -95,7 +95,7 @@ function MapBackground() {
           {({ geographies }) =>
             geographies.map((geo) => (
               <Geography
-                key={geo.rpioperties?.name || geo.id}
+                key={geo.properties?.name || geo.id}
                 geography={geo}
                 fill="#112240"
                 stroke="#1e3a5f"
