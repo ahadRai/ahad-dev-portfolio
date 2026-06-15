@@ -6,9 +6,9 @@ const projects = [
     {
         title: 'VibeStandard - Production readiness auditor for AI-generated code',
         subtitle: 'Production readiness auditor',
-        tech: ['Python', 'FastAPI', 'React', 'Docker', 'PostgreSQL', 'AWS'],
+        tech: ['Python', 'FastAPI', 'React', 'Docker', 'PostgreSQL', 'AWS', 'nginx'],
         desc: 'Production readiness auditor that scans AI-generated code for 90+ issues. Features parallel analyzers with a YAML-based rule engine, context-aware scoring, and a FastAPI backend with a React frontend. Containerized with Docker and deployed on AWS EC2.',
-        live: 'http://3.26.114.125/',
+        live: 'https://vibestandard.dev',
     },
     {
         title: 'Health Bar',
